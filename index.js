@@ -1,7 +1,6 @@
 import { Splide } from '@splidejs/splide';
 
-const splide = new Splide('#cross-sell', { pagination: false });
-splide.mount();
+
 
 const instructionsCarousel = new Splide('#instructions', {
   classes: {
