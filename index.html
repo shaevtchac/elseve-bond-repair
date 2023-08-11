@@ -1,404 +1,490 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Title</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" type="module"></script>
-  </head>
 
-  <body
-    class="mx-auto max-w-[1300px] font-montserrat text-[clamp(1rem,0.95rem+0.25vw,1.25rem)]"
-  >
-    <!--                                                                  x1x
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>Elseve Bond Repair</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" type="module"></script>
+</head>
+
+<body class="mx-auto max-w-[1300px] font-montserrat text-[clamp(1rem,0.95rem+0.25vw,1.25rem)]">
+  <!--                                                                  x1x
                                                                             x
                                                                             x
                                                                             x
                                                                             x
 -->
-    <div class=" mx-auto mt-4">
+  <div class="mx-auto mt-4 lg:mt-0 relative">
 
+    <div data-animation='fade-from-left' 
+      class="sm:flex gap-4 justify-center items-center sm:w-4/5 mx-auto lg:block lg:w-[27%] lg:absolute top-[3%] left-0">
+
+      <div class="flex-[3] w-2/3 lg:w-full mx-auto">
         <svg viewBox="0 0 318.77 84.8" class="w-1/2 mx-auto">
           <use href="#lorealLogo"></use>
         </svg>
-
         <svg viewBox="0 0 419.58 94.22" class="w-3/4 mt-4 mx-auto">
           <use href="#elseveLogo"></use>
         </svg>
+      </div>
 
-        <div class="mt-8 font-bold text-center ">
-          <p class="text-[.8em]">PRZEŁOMOWA TECHNOLOGIA*</p>
-          <P class="text-[1.8em] bg-gradient-to-r from-primary from-45% to-[#86110d] to-55% text-white my-2 w-10/12 mx-auto" >BOND REPAIR</P>
-          <P class="text-[.8em] text-primary" >Z KWASEM CYTRYNOWYM</P>
-        </div>
-
-        <svg viewBox="0 0 1300 730" class="w-full mt-4">
-          <image x="0" y="0" width="1299" height="729" href="img/10bg1.jpg"></image>
-          <g font-size="24">
-            <text x="360" y="200" class="fill-primary font-bold">WZMOCNIONE</text>
-            <text x="360" y="200" dx="33" dy="27" >WIĄZANIE</text>
-            <line x1="450" y1="240" x2="450" y2="290" class="stroke-primary stroke-2"></line>
-          </g>
-          <g font-size="16">
-            <text x="640" y="30" class="fill-primary font-bold">USZKODZONE</text>
-            <text x="640" y="30" dx="20" dy="27">WIĄZANIE</text>
-            <line x1="700" y1="65" x2="700" y2="100" class="stroke-primary stroke-2"></line>
-          </g>
-        </svg>
-        <img src="img/11pack.png" alt="packaging" class="w-10/12 mx-auto -mt-[30%]">
-        <div class="w-10/12 mx-auto leading-tight text-center">
-          <p class="text-[1.3em] "><span class="text-primary font-bold ">NASZA PIERWSZA RUTYNA ODBUDOWUJĄCA</span> WŁOSY I WZMACNIAJĄCA USZKODZONE WIĄZANIA</p>
-          <p class="my-4"><small>JESTEŚ TEGO WARTA.</small></p>
-          <p><small>*od L'Oreal Paris</small></p>
-        </div>
+      <div class="mt-8 font-bold text-center flex-[5]">
+        <p class="text-[.8em]">PRZEŁOMOWA TECHNOLOGIA*</p>
+        <P
+          class="text-[1.5em]  bg-gradient-to-r from-primary from-45% to-[#86110d] to-55% text-white my-2 w-10/12 mx-auto">
+          BOND REPAIR</P>
+        <P class="text-[.8em] text-primary">Z KWASEM CYTRYNOWYM</P>
+      </div>
 
     </div>
-    <!--                                                                    x2xxx
+
+    <svg viewBox="0 0 1300 730" class="w-full mt-4 lg:mt-0">
+      <foreignObject width="1300" height="730">
+        <img src="img/10bg.jpg" width="100%"
+          srcset="img/10bg-025x.jpg 325w, img/10bg-05x.jpg 650w, img/10bg-075x.jpg 974w, img/10bg.jpg 1299w"
+          sizes="100vw" alt="bond repair illustration">
+      </foreignObject>
+      <!-- <image x="0" y="0" width="1299" height="729" href="img/10bg1.jpg"></image> -->
+      <g font-size="24">
+        <text x="460" y="200" text-anchor="middle" class="fill-primary font-bold">WZMOCNIONE
+          <tspan x="460" dy="1.2em" class="fill-black font-normal">WIĄZANIE</tspan>
+        </text>
+        <line x1="460" y1="240" x2="460" y2="290" class="stroke-primary stroke-2"></line>
+      </g>
+      <g font-size="16">
+        <text x="700" y="30" text-anchor="middle" class="fill-primary font-bold">USZKODZONE
+          <tspan x="700" dy="1.2em" class="fill-black font-normal">WIĄZANIE</tspan>
+        </text>
+        <line x1="700" y1="65" x2="700" y2="100" class="stroke-primary stroke-2"></line>
+      </g>
+    </svg>
+
+    <img src="img/11pack.png" alt="packaging"
+      class="w-10/12 mx-auto -mt-[25%] max-w-fit lg:w-[30%] lg:absolute bottom-0 right-[8%]" data-animation="zoomInDown" data-duration="1s">
+
+    <div class="w-10/12 mx-auto leading-tight text-center lg:text-left lg:absolute bottom-4 left-4 lg:w-1/3 xl:w-2/5" data-animation='fade-from-bottom' >
+      <p class="text-[1.2em] xl:text-[1.5em]"><span class="text-primary font-bold ">NASZA PIERWSZA RUTYNA
+          ODBUDOWUJĄCA</span> WŁOSY I&nbsp;WZMACNIAJĄCA USZKODZONE WIĄZANIA</p>
+      <p class="my-4"><small>JESTEŚ TEGO WARTA.</small></p>
+      <p><small>*od L'Oreal Paris</small></p>
+    </div>
+
+  </div>
+  <!--                                                                    x2xxx
                                                                                 x
                                                                             xxxxx
                                                                             x
                                                                             xxxxx
 -->
-    <div class="w-10/12 mx-auto mt-8 font-bold text-center grid lg:grid-cols-5 lg:gap-1">
-      <div class="bg-[#ccccdd] lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center cursor-pointer">Technologia Bond Repair</div>
-      <div class="bg-[#ccccdd] lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center cursor-pointer">Gama Elseve Bond Repair</div>
-      <div class="bg-[#ccccdd] lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center cursor-pointer">Efekty</div>
-      <div class="bg-[#ccccdd] lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center cursor-pointer">Opinia Eksperta</div>
-      <div class="bg-[#ccccdd] lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center cursor-pointer">Rutyna Elseve Bond Repair</div>
-    </div>
-    <!--                                                                    x3xxx
+  <div id="menu" class="w-10/12 mx-auto mt-8 font-bold text-center lg:grid grid-cols-5 gap-1 hidden sticky top-0 z-20">
+
+    <a href="#technologia1" class="text-primary hover:text-primary">
+      <div class="bg-[#ccccdd] h-full lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center ">
+        Technologia Bond
+        Repair
+      </div>
+    </a>
+
+    <a href="#gama1" class="hover:text-primary">
+      <div class="bg-[#ccccdd] h-full lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center">
+        Gama Elseve Bond
+        Repair
+      </div>
+    </a>
+
+    <a href="#efekty1" class="hover:text-primary">
+      <div class="bg-[#ccccdd] h-full lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center">Efekty
+      </div>
+    </a>
+
+    <a href="#opinia1" class="hover:text-primary">
+      <div class="bg-[#ccccdd] h-full lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center">
+        Opinia Eksperta
+      </div>
+    </a>
+
+    <a href="#rutyna1" class="hover:text-primary">
+      <div class="bg-[#ccccdd] h-full lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center">
+        Rutyna Elseve Bond
+        Repair
+      </div>
+    </a>
+
+  </div>
+  <div id="technologia1"></div>
+  <!--                                                                    x3xxx
                                                                                 x
                                                                             xxxxx
                                                                                 x
                                                                             xxxxx
 -->
+  <div id="technologia">
     <div class="w-10/12 mx-auto mt-20 mb-8">
-      <p  class="text-[1.7em] font-bold text-center">PRZYWRÓĆ SIŁĘ SWOIM WŁOSOM</p>
-
+      <p class="text-[1.7em] font-bold text-center">PRZYWRÓĆ SIŁĘ SWOIM WŁOSOM</p>
       <DIV class="text-center flex flex-wrap justify-center">
-
         <div class="min-w-[250px] max-w-[300px] flex-1">
-          <p class="text-[3em] font-bold text-primary">+82%</p>
+          <p class="text-[3em] font-bold text-primary">+<span data-animation="num1" data-duration="2s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num1)] [counter-reset:num1_var(--num1)]"></span>%</p>
           <p>Odbudowa struktury włosów*</p>
         </div>
-
         <div class="min-w-[250px] max-w-[300px] flex-1">
-          <p class="text-[3em] font-bold text-primary">-98%</p>
+          <p class="text-[3em] font-bold text-primary">-<span data-animation="num2" data-duration="2s" data-delay="1s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num2)] [counter-reset:num2_var(--num2)]"></span>%</p>
           <p>Mniej złamań**</p>
         </div>
-
         <div class="min-w-[250px] max-w-[300px] flex-1">
-          <p class="text-[3em] font-bold text-primary">+90%</p>
+          <p class="text-[3em] font-bold text-primary">+<span data-animation="num3" data-duration="2s" data-delay="2s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num3)] [counter-reset:num3_var(--num3)]"></span>%</p>
           <p>Blasku**</p>
         </div>
-
       </DIV>
-
-      <p class="text-center"><small>
-        * Test instrumentalny po 6 aplikacjach Pre-szamponu, szamponu oraz odżywki Bond Repair. <br>
+      <p class="text-center mt-4"><small>
+          * Test instrumentalny po 6 aplikacjach Pre-szamponu, szamponu oraz odżywki Bond Repair. <br>
           ** Test instrumentalny po zastosowaniu Pre-szamponu, szamponu oraz odżywki Bond Repair.
-      </small></p>
-
+        </small></p>
     </div>
     <!--                                                                    x   x
-                                                                            x   x
-                                                                            x4xxx
-                                                                                x
-                                                                                x
--->
-    <div class="w-10/12 mx-auto mt-20">
-      <p class="h2">W JAKI SPOSÓB <strong>
-        TECHNOLOGIA ELSEVE BOND REPAIR
+                                                                              x   x
+                                                                              x4xxx
+                                                                                  x
+                                                                                  x
+    -->
+    <div class="mt-20">
+      <p class="h2 mb-10 w-10/12 mx-auto">W JAKI SPOSÓB <strong>
+          TECHNOLOGIA ELSEVE BOND REPAIR
           ODBUDOWUJE WŁOSY
-      </strong> I WZMACNIA USZKODZONE WIĄZANIA?</p>
-
-      <div class='flex flex-wrap justify-center gap-4 text-center'>
-      
-        <div data-animation='fade-from-left' class='min-w-[240px] max-w-[390px] flex-1 overflow-hidden bg-primary text-white'>
-          <img src='img/41.jpg' alt='zniszczone WIĄZANIA' class='hover:scale-110 transition-transform duration-500'/>
+        </strong> I WZMACNIA USZKODZONE WIĄZANIA?</p>
+      <div class='flex flex-wrap justify-center gap-1 text-center'>
+        <div data-animation='fade-from-left'
+          class='min-w-[240px] max-w-[390px] flex-1 overflow-hidden bg-primary text-white'>
+          <img src='img/41.jpg' alt='zniszczone WIĄZANIA' class='hover:scale-110 transition-transform duration-500' />
           <p class='mx-4 mt-4 font-bold'>ZNISZCZONE WŁOSY</p>
           <p class='mb-5 mx-4'>Wewnętrzne wiązania włosów
             ulegają uszkodzeniu.</p>
         </div>
-      
         <div data-animation='fade-in' data-delay='0ms' data-duration='1s'
           class='min-w-[240px] max-w-[390px] flex-1 overflow-hidden  bg-primary text-white'>
-          <img src='img/42.jpg' alt='naprawa wiązań we włosach' class='hover:scale-110 transition-transform duration-500'/>
+          <img src='img/42.jpg' alt='naprawa wiązań we włosach'
+            class='hover:scale-110 transition-transform duration-500' />
           <p class='mx-4 mt-4 font-bold'>NASZ KOMPLEKS BOND REPAIR</p>
-          <p class='mb-5 mx-4'>Zawiera cząsteczkę kwasu cytrynowego, która jest na tyle mała, że przenika przez osłonkę włosa, aby wzmocnić wewnętrzne wiązania włosów</p>
+          <p class='mb-5 mx-4'>Zawiera cząsteczkę kwasu cytrynowego, która jest na tyle mała, że przenika przez osłonkę
+            włosa, aby wzmocnić wewnętrzne wiązania włosów</p>
         </div>
-      
-        <div data-animation='fade-from-right' class='min-w-[240px] max-w-[390px] flex-1 overflow-hidden bg-primary text-white'>
-          <img src='img/43.jpg' alt='naprawione wiązania' class='hover:scale-110 transition-transform duration-500'/>
+        <div data-animation='fade-from-right'
+          class='min-w-[240px] max-w-[390px] flex-1 overflow-hidden bg-primary text-white'>
+          <img src='img/43.jpg' alt='naprawione wiązania' class='hover:scale-110 transition-transform duration-500' />
           <p class='mx-4 mt-4 font-bold'>ODBUDOWANE WŁOSY</p>
           <p class='mb-5 mx-4'>Wzmocniona struktura włosów. Przywrócenie siły włosom.</p>
         </div>
-      
       </div>
     </div>
     <!--                                                                    x5xxx
-                                                                            x
-                                                                            xxxxx
-                                                                                x
-                                                                            xxxxx
--->
-    <div class="w-10/12 mx-auto mt-20">
-      <p class="h2">PRZEŁOMOWA TECHNOLOGIA
-        OD L'ORÉAL PARIS,
-        wzbogacona w</p>
+                                                                              x
+                                                                              xxxxx
+                                                                                  x
+                                                                              xxxxx
+    -->
+    <div class="mt-20 relative">
+      <div
+        class="w-10/12 mx-auto text-[1.3em] md:text-[.9em] lg:text-[1.1em] xl:text-[1.3em] md:w-[55%] md:absolute top-[14%] right-[4%] text-center md:text-left">
+        <p>PRZEŁOMOWA TECHNOLOGIA
+          OD L'ORÉAL PARIS,
+          wzbogacona w</p>
         <div
-        class='text-[1.4em] text-primary font-bold mx-auto border-[2px] relative border-primary my-4 py-2 w-fit px-4 before:absolute before:h-[2px] before:bg-white before:w-11/12 before:left-1/2 before:-translate-x-1/2 before:-top-[2px] after:absolute after:h-[2px] after:bg-white after:w-11/12 after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px]'>
-        KWAS CYTRYNOWY
+          class='text-[1.4em] text-primary font-bold mx-auto border-[2px] relative border-primary my-4 py-2 w-fit px-4 before:absolute before:h-[2px] before:bg-white before:w-11/12 before:left-1/2 before:-translate-x-1/2 before:-top-[2px] after:absolute after:h-[2px] after:bg-white after:w-11/12 after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px]'>
+          KWAS CYTRYNOWY
         </div>
-        <p class="text-center">
+        <p>
           Formuła wzmacnia uszkodzone wiązania włosów oraz uszczelnia
-            osłonkę, dodając włosom niezwykłej miękkości i połysku.
+          osłonkę, dodając włosom niezwykłej miękkości i połysku.
         </p>
-        <svg viewBox='0 0 530 510' preserveAspectRatio='xMinYMin meet' xmlns='http://www.w3.org/2000/svg' class='mt-4 w-full'>
-          <image href="img/50xs.jpg" width="530" height="510" x="0" y="0"></image>
-          <text x="250" y="80" class="font-bold" font-size="16">Uszkodzone wiązanie włosa</text>
-          <line x1="350" y1="90" x2="270" y2="120" class="stroke-primary stroke-2"></line>
-          <text x="330" y="180" class="font-bold" font-size="16">Wzmocnione wiązanie</text>
-          <line x1="430" y1="190" x2="430" y2="230" class="stroke-primary stroke-2"></line>
-        </svg>
+      </div>
+      <svg viewBox="0 0 1300 513" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg"
+        class="hidden md:block w-full">
+        <image href="img/50.jpg" width="100%" height="100%" x="0" y="0"></image>
+        <text x="250" y="80" font-weight="bold" font-size="16">Uszkodzone wiązanie włosa</text>
+        <line x1="350" y1="90" x2="270" y2="120" class="stroke-primary stroke-2"></line>
+        <text x="330" y="180" font-weight="bold" font-size="16">Wzmocnione wiązanie</text>
+        <line x1="430" y1="190" x2="430" y2="230" class="stroke-primary stroke-2"></line>
+      </svg>
+      <svg viewBox='0 0 530 510' preserveAspectRatio='xMinYMin meet' xmlns='http://www.w3.org/2000/svg'
+        class='mt-4 w-full md:hidden'>
+        <image href="img/50xs.jpg" width="530" height="510" x="0" y="0"></image>
+        <text x="250" y="80" font-weight="bold" font-size="16">Uszkodzone wiązanie włosa</text>
+        <line x1="350" y1="90" x2="270" y2="120" class="stroke-primary stroke-2"></line>
+        <text x="330" y="180" font-weight="bold" font-size="16">Wzmocnione wiązanie</text>
+        <line x1="430" y1="190" x2="430" y2="230" class="stroke-primary stroke-2"></line>
+      </svg>
     </div>
-    <!--                                                                    x6xxx
+  </div>
+  <div id="gama1"></div>
+  <!--                                                                      x6xxx
                                                                             x
                                                                             xxxxx
                                                                             x   x
                                                                             xxxxx
 -->
-    <div class="w-10/12 mx-auto mt-20">
-      <p class="h2">
-        INTENSYWNA ODBUDOWA ZNISZCZONYCH WŁOSÓW
-        PODCZAS <strong>DOMOWEJ PIELĘGNACJI</strong>
-      </p>
-      <p class="text-center mt-4">Poznaj nowe produkty <strong>Elseve z gamy Bond Repair</strong> wzbogacone kwasem cytrynowym.</p>
+  <div id="gama" class="w-10/12 mx-auto mt-20 lg:hidden">
+    <p class="h2">
+      INTENSYWNA ODBUDOWA ZNISZCZONYCH WŁOSÓW
+      PODCZAS <strong>DOMOWEJ PIELĘGNACJI</strong>
+    </p>
+    <p class="text-center mt-4">Poznaj nowe produkty <strong>Elseve z gamy Bond Repair</strong> wzbogacone kwasem
+      cytrynowym.</p>
 
-      <!-- container -->
-      <div>
+    <!-- container -->
+    <div class="grid lg:grid-cols-2 items-center mt-10">
 
-        <div class="mb-4 mt-10">
-          <p class="text-[1.3em] font-bold text-primary"><span class="bg-primary py-1 px-4 text-white mr-3">KROK 1</span> Odbudowa</p>  
-          <p class="font-bold mt-4 text-[1.05em]">Pre-szampon “Naprawczy” Bond Repair
-            [12% Complex Bond Repair z kwasem cytrynowym]</p>
-          <ul class="my-4">
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">najbardziej skoncentrowana formuła Bond Repair</li>
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">oferuje najintensywniejszą odbudowę włosów*</li>
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">stosuj przed szamponem</li>
-          </ul>
-          <p class="font-bold mb-4">Nanieś na wilgotne włosy, pozostaw na 5 minut, spłucz.</p>
-          <small>* Spośród produktów z gamy Elseve Bond Repair.</small>
-        </div>
-
-        <img src="img/61.jpg" alt="">
-
-        <div class="mb-4 mt-10">
-          <p class="text-[1.3em] font-bold text-primary"><span class="bg-primary py-1 px-4 text-white mr-3">KROK 2</span> Wzmocnienie</p>  
-          <p class="font-bold mt-4 text-[1.05em]">Szampon Bond Repair 
-            [5% Complex Bond Repair z kwasem cytrynowym]</p>
-          <ul class="my-4">
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">delikatnie oczyszcza skórę głowy</li>
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">wzmacnia wewnętrzne wiązania włosa</li>
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">formuła bez silikonów dla naturalnych w dotyku włosów</li>
-          </ul>
-          <p class="font-bold mb-4">Nanieś na wilgotne włosy, wmasuj i spłucz.</p>
-        </div>
-        
-        <img src="img/62.jpg" alt="">
-
-        <div class="mb-4 mt-10">
-          <p class="text-[1.3em] font-bold text-primary"><span class="bg-primary py-1 px-4 text-white mr-3">KROK 3</span> Regeneracja</p>  
-          <p class="font-bold mt-4 text-[1.05em]">Odżywka Bond Repair 
-            [10% Complex Bond Repair z kwasem cytrynowym]</p>
-          <ul class="my-4">
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">intensywnie pielęgnuje włókna włosa</li>
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">ułatwia rozczesywanie</li>
-            <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">nadaje włosom miękkość</li>
-          </ul>
-          <p class="font-bold mb-4">Nanieś na wilgotne włosy od połowy długości włosów. Pozostaw na 3 minuty, spłucz.</p>
-        </div>
-
-        <img src="img/63.jpg" alt="">
+      <div class="lg:text-[0.85em] xl:text-[1em] mb-4 mt-10 lg:mb-0 lg:mt-0 max-w-[600px] p-4 lg:order-1" data-animation='fade-from-right' >
+        <p class="text-[1.3em] font-bold text-primary"><span class="bg-primary py-1 px-4 text-white mr-3">KROK 1</span>
+          Odbudowa</p>
+        <p class="font-bold mt-4 text-[1.05em]">Pre-szampon “Naprawczy” Bond Repair
+          [12% Complex Bond Repair z kwasem cytrynowym]</p>
+        <ul class="my-4">
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            najbardziej skoncentrowana formuła Bond Repair</li>
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            oferuje najintensywniejszą odbudowę włosów*</li>
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            stosuj przed szamponem</li>
+        </ul>
+        <p class="font-bold mb-4">Nanieś na wilgotne włosy, pozostaw na 5 minut, spłucz.</p>
+        <small>* Spośród produktów z gamy Elseve Bond Repair.</small>
       </div>
+
+      <img src="img/61.jpg" alt="" class="lg:order-[0]" data-animation='fade-from-left' >
+
+      <div class="lg:text-[0.85em] xl:text-[1em] mb-4 mt-10 lg:mb-0 lg:mt-0 max-w-[600px] p-4 order-2" data-animation='fade-from-right' >
+        <p class="text-[1.3em] font-bold text-primary"><span class="bg-primary py-1 px-4 text-white mr-3">KROK 2</span>
+          Wzmocnienie</p>
+        <p class="font-bold mt-4 text-[1.05em]">Szampon Bond Repair
+          [5% Complex Bond Repair z kwasem cytrynowym]</p>
+        <ul class="my-4">
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            delikatnie oczyszcza skórę głowy</li>
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            wzmacnia wewnętrzne wiązania włosa</li>
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            formuła bez silikonów dla naturalnych w dotyku włosów</li>
+        </ul>
+        <p class="font-bold mb-4">Nanieś na wilgotne włosy, wmasuj i spłucz.</p>
+      </div>
+
+      <img src="img/62.jpg" alt="" class="order-3" data-animation='fade-from-left' >
+
+      <div class="lg:text-[0.85em] xl:text-[1em] mb-4 mt-10 lg:mb-0 lg:mt-0 max-w-[600px] p-4 lg:order-5" data-animation='fade-from-right' >
+        <p class="text-[1.3em] font-bold text-primary"><span class="bg-primary py-1 px-4 text-white mr-3">KROK 3</span>
+          Regeneracja</p>
+        <p class="font-bold mt-4 text-[1.05em]">Odżywka Bond Repair
+          [10% Complex Bond Repair z kwasem cytrynowym]</p>
+        <ul class="my-4">
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            intensywnie pielęgnuje włókna włosa</li>
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            ułatwia rozczesywanie</li>
+          <li class="before:content-['•'] before:text-primary before:inline-block before:w-[1em] before:font-bold">
+            nadaje włosom miękkość</li>
+        </ul>
+        <p class="font-bold mb-4">Nanieś na wilgotne włosy od połowy długości włosów. Pozostaw na 3 minuty, spłucz.</p>
+      </div>
+
+      <img src="img/63.jpg" alt="" class="lg:order-4">
     </div>
-    <!--                                                                    x7xxx
+  </div>
+  <div id="efekty1"></div>
+  <!--                                                                      x7xxx
                                                                                 x
                                                                                x
                                                                               x
                                                                              x
 -->
-    <div class="w-10/12 mx-auto mt-20">
-      <p class="h2 mb-10"><strong>Dla każdego typu</strong> zniszczonych włosów</p>
+  <div id="efekty" class="mx-auto mt-20 lg:hidden">
+    <p class="h2 mb-10"><strong>Dla każdego typu</strong> zniszczonych włosów</p>
 
-      <!-- container -->
-      <div class="flex flex-wrap justify-center gap-1">
+    <!-- container -->
+    <div class="flex flex-wrap justify-center gap-1">
 
-        <div class="relative w-fit">
-          <img src="img/71.jpg" alt="">
-          <span class="absolute left-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PRZED</span>
-          <span class="absolute right-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PO</span>
-        </div>
-
-        <div class="relative w-fit">
-          <img src="img/72.jpg" alt="">
-          <span class="absolute left-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PRZED</span>
-          <span class="absolute right-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PO</span>
-        </div>
-
-        <div class="relative w-fit">
-          <img src="img/73.jpg" alt="">
-          <span class="absolute left-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PRZED</span>
-          <span class="absolute right-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PO</span>
-        </div>
-
+      <div class="relative w-fit" data-animation='fade-from-top' >
+        <img src="img/71.jpg" alt="">
+        <span class="absolute left-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PRZED</span>
+        <span class="absolute right-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PO</span>
       </div>
+
+      <div class="relative w-fit" data-animation='fade-from-bottom' data-duration='1s' data-delay='0s' >
+        <img src="img/72.jpg" alt="">
+        <span class="absolute left-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PRZED</span>
+        <span class="absolute right-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PO</span>
+      </div>
+
+      <div class="relative w-fit" data-animation='fade-from-top' >
+        <img src="img/73.jpg" alt="">
+        <span class="absolute left-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PRZED</span>
+        <span class="absolute right-0 top-0 bg-primary text-white font-bold py-1 w-[6em] text-center">PO</span>
+      </div>
+
     </div>
-    <!--                                                                    x8xxx
+  </div>
+  <div id="opinia1"></div>
+  <!--                                                                    x8xxx
                                                                             x   x
                                                                             xxxxx
                                                                             x   x
                                                                             xxxxx
 -->
-<div class="mt-20">
+  <div id="opinia" class="mt-20 lg:hidden">
 
-  <div class="bg-[url(img/80.jpg)] bg-cover bg-no-repeat bg-center py-10">
-    <div id="instructions" aria-label="Jak dobrać kolor, aplikować i używać"
-      class="splide mx-auto grid w-10/12 gap-4 rounded-xl bg-white p-8 sm:grid-cols-[auto_1fr] md:mr-20 md:ml-auto md:w-2/3">
-      <div class="text-center text-sm">
-        <img loading="lazy" src="img/81.png" alt="Paweł Zięba" class="mx-auto" />
-        <p class="font-bold mt-4">Paweł Zięba</p>
-        <p>Fryzjer, Hair Expert <br>
-          L'Oréal Paris</p>
-      </div>
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <p>
-              Włosy składają się w 90% z keratyny, czyli białka, a podobnie jak białko
-              z jajka, które ścina się pod wpływem wysokiej temperatury, tak samo
-              białko w naszych włosach "ścina" się na skutek wysokiej temperatury suszarki, prostownicy czy lokówki.
-              <strong>Dodatkowo, koloryzacja czy promieniowanie UV uszkadzają włókna naszych włosów.</strong><br><br>
+    <div class="bg-[url(img/80.jpg)] bg-cover bg-no-repeat py-10">
+      <div id="instructions" aria-label="Jak dobrać kolor, aplikować i używać"
+        class="splide mx-auto grid w-10/12 gap-4 rounded-xl bg-white p-8 sm:grid-cols-[auto_1fr] md:mr-20 md:ml-auto md:w-2/3">
+        <div class="text-center text-sm">
+          <img loading="lazy" src="img/81.png" alt="Paweł Zięba" class="mx-auto" />
+          <p class="font-bold mt-4">Paweł Zięba</p>
+          <p>Fryzjer, Hair Expert <br>
+            L'Oréal Paris</p>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <p>
+                Włosy składają się w 90% z keratyny, czyli białka, a podobnie jak białko
+                z jajka, które ścina się pod wpływem wysokiej temperatury, tak samo
+                białko w naszych włosach "ścina" się na skutek wysokiej temperatury suszarki, prostownicy czy lokówki.
+                <strong>Dodatkowo, koloryzacja czy promieniowanie UV uszkadzają włókna naszych włosów.</strong><br><br>
 
-              Tu z pomocą przychodzi nowa linia <strong>Elseve Bond Repair, która działa nie tylko powierzchniowo, ale
-                wnika do samego wnętrza włosa.</strong> Dzięki zawartości kwasu cytrynowego odbudowuje uszkodzone włókna
-              (mostki dwusiarczkowe), przywraca im sprężystość, nadaje blask i wzmacnia wytrzymałość włosów.
-            </p>
-          </li>
-          <li class="splide__slide">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </p>
-          </li>
+                Tu z pomocą przychodzi nowa linia <strong>Elseve Bond Repair, która działa nie tylko powierzchniowo, ale
+                  wnika do samego wnętrza włosa.</strong> Dzięki zawartości kwasu cytrynowego odbudowuje uszkodzone
+                włókna
+                (mostki dwusiarczkowe), przywraca im sprężystość, nadaje blask i wzmacnia wytrzymałość włosów.
+              </p>
+            </li>
+            <li class="splide__slide">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
-    <!--                                                                    x9xxx
+  <div id="rutyna1"></div>
+  <!--                                                                    x9xxx
                                                                             x   x
                                                                             xxxxx
                                                                                 x
                                                                             xxxxx
 -->
-    <div class="w-10/12 mx-auto mt-20">
-      <p class="h2">pełna rutyna <strong>elseve bond repair</strong></p>
-      <div class='flex flex-wrap justify-center gap-4 text-center'>
-        <div data-animation='fade-from-left' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
-          <div class="min-h-[348px]">
-            <img src='img/91.jpg' alt='szampon' class='mx-auto hover:scale-110 transition-transform duration-500' />
-          </div>
-          <p class='mt-4 mb-2 font-bold min-h-[2lh]'>Pre-szampon “Naprawczy”</p>
-          <p class='mb-2 '></p>
-          <button class="hover:scale-110">KUP TERAZ</button>
+  <div id="rutyna" class="w-10/12 mx-auto mt-20 lg:hidden">
+    <p class="h2">pełna rutyna <strong>elseve bond repair</strong></p>
+    <div class='flex flex-wrap justify-center gap-4 text-center'>
+      <div data-animation='fade-from-left' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+        <div class="min-h-[348px]">
+          <img src='img/91.jpg' alt='szampon' class='mx-auto hover:scale-110 transition-transform duration-500' />
         </div>
-      
-        <div data-animation='fade-in' data-duration='1000ms' data-delay='0s' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
-          <div class="min-h-[348px]">
-            <img src='img/92.jpg' alt='szampon  wzmacniający' class='mx-auto hover:scale-110 transition-transform duration-500' />
-          </div>
-          <p class='mt-4 mb-2 font-bold min-h-[2lh]'>Szampon wzmacniający
-            wewnętrzne wiązania włosa</p>
-          <p class='mb-2 '></p>
-          <button class="hover:scale-110">KUP TERAZ</button>
+        <p class='mt-4 mb-2 font-bold min-h-[2lh]'>Pre-szampon “Naprawczy”</p>
+        <p class='mb-2 '></p>
+        <button class="hover:scale-110">KUP TERAZ</button>
+      </div>
+
+      <div data-animation='fade-in' data-duration='1000ms' data-delay='0s'
+        class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+        <div class="min-h-[348px]">
+          <img src='img/92.jpg' alt='szampon  wzmacniający'
+            class='mx-auto hover:scale-110 transition-transform duration-500' />
         </div>
-      
-        <div data-animation='fade-from-right' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
-          <div class="min-h-[348px]">
-            <img src='img/93.jpg' alt='odżywka' class='mx-auto hover:scale-110 transition-transform duration-500' />
-          </div>
-          <p class='mt-4 mb-2 font-bold min-h-[2lh]'>Odżywka wzmacniająca
-            wewnętrzne wiązania włosa</p>
-          <p class='mb-2 '></p>
-          <button class="hover:scale-110">KUP TERAZ</button>
+        <p class='mt-4 mb-2 font-bold min-h-[2lh]'>Szampon wzmacniający
+          wewnętrzne wiązania włosa</p>
+        <p class='mb-2 '></p>
+        <button class="hover:scale-110">KUP TERAZ</button>
+      </div>
+
+      <div data-animation='fade-from-right' class='min-w-[240px] max-w-[300px] flex-1 mt-10'>
+        <div class="min-h-[348px]">
+          <img src='img/93.jpg' alt='odżywka' class='mx-auto hover:scale-110 transition-transform duration-500' />
         </div>
+        <p class='mt-4 mb-2 font-bold min-h-[2lh]'>Odżywka wzmacniająca
+          wewnętrzne wiązania włosa</p>
+        <p class='mb-2 '></p>
+        <button class="hover:scale-110">KUP TERAZ</button>
       </div>
     </div>
-    <!--                                                                x   x10xx
+  </div>
+  <!--                                                                  x   x10xx
                                                                         x   x   x
                                                                         x   x   x
                                                                         x   x   x
                                                                         x   xxxxx
 -->
-    <div class="w-10/12 mx-auto mt-20 mb-10">
-      <div class="flex flex-wrap justify-center items-center gap-5">
-        <div class="max-w-[300px]">
-          <svg viewBox="0 0 318.77 84.8" class="w-1/2 mx-auto">
-            <use href="#lorealLogo"></use>
-          </svg>
-          <svg viewBox="0 0 419.58 94.22" class="w-3/4 mt-4 mx-auto">
-            <use href="#elseveLogo"></use>
-          </svg>
-        </div>
-        <img src="img/101.png" alt="marka nr 1 w polsce logo">
-        <div  class="max-w-[350px]">
-          <p class="text-[1.2em] uppercase text-center">
-            <strong>marka nr 1 w polsce</strong>
-            w&nbsp;pielęgnacji włosów*</p>
-        </div>
+  <div class="w-10/12 mx-auto mt-20 mb-10">
+    <div class="flex flex-wrap justify-center items-center gap-5">
+      <div class="max-w-[300px]">
+        <svg viewBox="0 0 318.77 84.8" class="w-1/2 mx-auto">
+          <use href="#lorealLogo"></use>
+        </svg>
+        <svg viewBox="0 0 419.58 94.22" class="w-3/4 mt-4 mx-auto">
+          <use href="#elseveLogo"></use>
+        </svg>
+      </div>
+      <img src="img/101.png" alt="marka nr 1 w polsce logo">
+      <div class="max-w-[350px]">
+        <p class="text-[1.2em] uppercase text-center">
+          <strong>marka nr 1 w polsce</strong>
+          w&nbsp;pielęgnacji włosów*
+        </p>
       </div>
     </div>
-    
+  </div>
 
-    <!-- SVGS -->
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
 
-      <symbol id="lorealLogo"  viewBox="0 0 318.77 84.8" fill="#1d1d1b">
-        <path d="m116.37,65.94h-11.58v18.38h3.48v-7.76h8.1c5.59,0,7.63-2.89,7.63-5.45,0-2.97-2.87-5.17-7.63-5.17m-1.18,8.5h-6.92v-6.38h7.06c2.87,0,5.09.74,5.09,3.07,0,2.48-2.11,3.3-5.23,3.3"/>
-        <path d="m176.56,84.19h-3.92l-5.25-7.46c-.07-.1-.19-.15-.32-.17h.17c-.05,0-.11-.01-.17,0h-7.05v7.76h-3.48v-18.38h11.58c4.77,0,7.64,2.2,7.64,5.17,0,2.12-1.41,4.45-5.05,5.2l5.86,7.88Zm-16.55-9.75h6.92c3.12,0,5.23-.82,5.23-3.3,0-2.33-2.23-3.07-5.09-3.07h-7.06v6.38Z"/>
-        <path d="m135.64,65.94l-10.71,18.38h3.97l2.97-5.35h11.43l2.82,5.35h4.21l-10.32-18.38h-4.36Zm-2.58,10.83l4.56-8.09h.08l4.21,8.09h-8.85Z"/>
-        <path d="m209.91,74.41l-7.09-1.2c-1.45-.26-2.94-.77-2.94-2.33,0-2.79,3.56-3.23,5.67-3.23,2.8,0,5.98.9,6.15,3.74h3.15c-.14-2.02-1-5.86-9.68-5.86-6.01,0-8.54,2.81-8.54,5.68,0,3.2,3.66,4.04,5.29,4.33l5.08.87c4.08.72,5.29,1.33,5.29,3.25,0,2.64-4.08,3.1-6.5,3.1-3.18,0-6.84-.97-6.84-4.3h-3.15c0,1.72.42,3.25,2.52,4.66,1.11.74,2.9,1.77,7.5,1.77,4.25,0,9.71-1.2,9.71-5.55,0-2.92-2.42-4.35-5.63-4.92"/>
-        <rect x="184.7" y="65.84" width="3.3" height="3.3"/>
-        <rect x="184.72" y="71.08" width="3.3" height="13.14"/>
-        <polygon points="173.42 53.71 214.56 53.71 214.56 48.69 180.48 48.69 180.48 32.61 206.08 32.61 206.08 27.53 180.48 27.53 180.48 12.72 214.56 12.72 214.56 7.71 173.42 7.71 173.42 53.71"/>
-        <polygon points="194.8 .28 189.23 6.53 206.71 .28 194.8 .28"/>
-        <polygon points="283.62 48.69 283.62 7.71 277.19 7.71 277.19 53.71 318.77 53.71 318.77 48.69 283.62 48.69"/>
-        <path d="m241.22,7.71l-23.39,46.01h7.9l5.99-11.9h28.05l6.04,11.9h7.82l-23.41-46.01h-9.01Zm-6.54,28.34l11.02-21.97,11.16,21.97h-22.18Z"/>
-        <path d="m151.1,34.48c10.54-2.81,11.57-10.66,11.52-13.46-.63-8.22-6.17-13.31-16.12-13.31h-28.99v46.01h6.61v-19.3h18.87l13.89,19.3h8.33s-9.99-12.99-14.1-19.24m-5.51-5.5h-21.48v-15.82h22.23c5.12,0,7.99,2.39,9.03,5.42.69,2.08.24,4.82-.89,6.67-1.86,3.08-5.39,3.73-8.9,3.73"/>
-        <path d="m77.78-.08c-18.66,0-31.37,13.15-31.37,29.08,0,16.76,14.05,28.59,31.37,28.59s31.36-11.66,31.36-28.59C109.14,13.07,96.26-.08,77.78-.08m-.22,51.96c-12.91,0-23.55-10.37-23.55-22.87s10.14-23.36,24.04-23.36,23.54,10.87,23.54,23.36-11.14,22.87-24.04,22.87"/>
-        <polygon points="29.75 23.98 34.52 23.98 43.18 7.71 36.21 7.71 29.75 23.98"/>
-        <polygon points="6.43 48.69 6.43 7.71 0 7.71 0 53.71 41.59 53.71 41.59 48.69 6.43 48.69"/>
-      </symbol>
+  <!-- SVGS -->
+  <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
 
-      <symbol id="elseveLogo" viewBox="0 0 419.58 94.22" fill="#1d1d1b">
-        <path class="cls-1" d="m170.44,40.56h0c-19.4-4.1-22.82-8.29-22.82-15.6s7.07-12.4,17.19-12.4c9.04,0,16.87,2.91,24.65,9.15l1.48,1.19,8.1-10.58-1.4-1.1c-9.94-7.86-19.69-11.22-32.58-11.22-18.1,0-31.23,10.98-31.23,26.1,0,16.97,12.59,23.15,31.49,27.19,18.53,3.85,21.79,7.97,21.79,15.21,0,7.75-7.44,13.16-18.09,13.16-11.35,0-19.87-3.47-29.43-11.99l-1.42-1.25-8.64,10.07,1.33,1.17c11.29,9.93,23.29,14.55,37.77,14.55,19.07,0,32.38-11.09,32.38-26.98,0-14.1-9.15-22.08-30.59-26.68"/>
-        <path class="cls-1" d="m360.26,1.26h-15.27l-30.59,72.93L284.24,2.27l-.63-1.02h-15.05l37.95,87.53c.25.57.59,1.13,1.08,1.74,1.54,1.94,3.84,3.06,6.31,3.06h1.02c2.47,0,4.76-1.11,6.31-3.06.49-.62.84-1.18,1.08-1.74L359.81,2.29l.45-1.03Z"/>
-        <path class="cls-1" d="m13.78,76.92v-23.91h40.72v-12.68H13.78v-23.2c0-1.79,1.48-3.24,3.3-3.24h43.17V1.2H16.08C7.21,1.2,0,8.3,0,17.04v60.08c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69H17.12c-1.84,0-3.34-1.48-3.34-3.29"/>
-        <path class="cls-1" d="m220.36,76.92v-23.91h40.71v-12.68h-40.71v-23.2c0-1.79,1.48-3.24,3.29-3.24h43.18V1.2h-44.16c-8.87,0-16.09,7.1-16.09,15.84v60.08c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69h-43.76c-1.84,0-3.34-1.48-3.34-3.29"/>
-        <path class="cls-1" d="m375.81,80.21c-1.84,0-3.34-1.48-3.34-3.29v-23.91h40.72v-12.68h-40.72v-23.2c0-1.79,1.48-3.24,3.3-3.24h43.17V1.2h-44.16c-8.87,0-16.09,7.1-16.09,15.84v60.08c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69h-43.76Z"/>
-        <path class="cls-1" d="m82.78,76.92V1.21h-13.78v75.91c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69h-43.76c-1.84,0-3.34-1.48-3.34-3.29"/>
+    <symbol id="lorealLogo" viewBox="0 0 318.77 84.8" fill="#1d1d1b">
+      <path
+        d="m116.37,65.94h-11.58v18.38h3.48v-7.76h8.1c5.59,0,7.63-2.89,7.63-5.45,0-2.97-2.87-5.17-7.63-5.17m-1.18,8.5h-6.92v-6.38h7.06c2.87,0,5.09.74,5.09,3.07,0,2.48-2.11,3.3-5.23,3.3" />
+      <path
+        d="m176.56,84.19h-3.92l-5.25-7.46c-.07-.1-.19-.15-.32-.17h.17c-.05,0-.11-.01-.17,0h-7.05v7.76h-3.48v-18.38h11.58c4.77,0,7.64,2.2,7.64,5.17,0,2.12-1.41,4.45-5.05,5.2l5.86,7.88Zm-16.55-9.75h6.92c3.12,0,5.23-.82,5.23-3.3,0-2.33-2.23-3.07-5.09-3.07h-7.06v6.38Z" />
+      <path
+        d="m135.64,65.94l-10.71,18.38h3.97l2.97-5.35h11.43l2.82,5.35h4.21l-10.32-18.38h-4.36Zm-2.58,10.83l4.56-8.09h.08l4.21,8.09h-8.85Z" />
+      <path
+        d="m209.91,74.41l-7.09-1.2c-1.45-.26-2.94-.77-2.94-2.33,0-2.79,3.56-3.23,5.67-3.23,2.8,0,5.98.9,6.15,3.74h3.15c-.14-2.02-1-5.86-9.68-5.86-6.01,0-8.54,2.81-8.54,5.68,0,3.2,3.66,4.04,5.29,4.33l5.08.87c4.08.72,5.29,1.33,5.29,3.25,0,2.64-4.08,3.1-6.5,3.1-3.18,0-6.84-.97-6.84-4.3h-3.15c0,1.72.42,3.25,2.52,4.66,1.11.74,2.9,1.77,7.5,1.77,4.25,0,9.71-1.2,9.71-5.55,0-2.92-2.42-4.35-5.63-4.92" />
+      <rect x="184.7" y="65.84" width="3.3" height="3.3" />
+      <rect x="184.72" y="71.08" width="3.3" height="13.14" />
+      <polygon
+        points="173.42 53.71 214.56 53.71 214.56 48.69 180.48 48.69 180.48 32.61 206.08 32.61 206.08 27.53 180.48 27.53 180.48 12.72 214.56 12.72 214.56 7.71 173.42 7.71 173.42 53.71" />
+      <polygon points="194.8 .28 189.23 6.53 206.71 .28 194.8 .28" />
+      <polygon points="283.62 48.69 283.62 7.71 277.19 7.71 277.19 53.71 318.77 53.71 318.77 48.69 283.62 48.69" />
+      <path
+        d="m241.22,7.71l-23.39,46.01h7.9l5.99-11.9h28.05l6.04,11.9h7.82l-23.41-46.01h-9.01Zm-6.54,28.34l11.02-21.97,11.16,21.97h-22.18Z" />
+      <path
+        d="m151.1,34.48c10.54-2.81,11.57-10.66,11.52-13.46-.63-8.22-6.17-13.31-16.12-13.31h-28.99v46.01h6.61v-19.3h18.87l13.89,19.3h8.33s-9.99-12.99-14.1-19.24m-5.51-5.5h-21.48v-15.82h22.23c5.12,0,7.99,2.39,9.03,5.42.69,2.08.24,4.82-.89,6.67-1.86,3.08-5.39,3.73-8.9,3.73" />
+      <path
+        d="m77.78-.08c-18.66,0-31.37,13.15-31.37,29.08,0,16.76,14.05,28.59,31.37,28.59s31.36-11.66,31.36-28.59C109.14,13.07,96.26-.08,77.78-.08m-.22,51.96c-12.91,0-23.55-10.37-23.55-22.87s10.14-23.36,24.04-23.36,23.54,10.87,23.54,23.36-11.14,22.87-24.04,22.87" />
+      <polygon points="29.75 23.98 34.52 23.98 43.18 7.71 36.21 7.71 29.75 23.98" />
+      <polygon points="6.43 48.69 6.43 7.71 0 7.71 0 53.71 41.59 53.71 41.59 48.69 6.43 48.69" />
     </symbol>
-    </svg>
-  </body>
+
+    <symbol id="elseveLogo" viewBox="0 0 419.58 94.22" fill="#1d1d1b">
+      <path class="cls-1"
+        d="m170.44,40.56h0c-19.4-4.1-22.82-8.29-22.82-15.6s7.07-12.4,17.19-12.4c9.04,0,16.87,2.91,24.65,9.15l1.48,1.19,8.1-10.58-1.4-1.1c-9.94-7.86-19.69-11.22-32.58-11.22-18.1,0-31.23,10.98-31.23,26.1,0,16.97,12.59,23.15,31.49,27.19,18.53,3.85,21.79,7.97,21.79,15.21,0,7.75-7.44,13.16-18.09,13.16-11.35,0-19.87-3.47-29.43-11.99l-1.42-1.25-8.64,10.07,1.33,1.17c11.29,9.93,23.29,14.55,37.77,14.55,19.07,0,32.38-11.09,32.38-26.98,0-14.1-9.15-22.08-30.59-26.68" />
+      <path class="cls-1"
+        d="m360.26,1.26h-15.27l-30.59,72.93L284.24,2.27l-.63-1.02h-15.05l37.95,87.53c.25.57.59,1.13,1.08,1.74,1.54,1.94,3.84,3.06,6.31,3.06h1.02c2.47,0,4.76-1.11,6.31-3.06.49-.62.84-1.18,1.08-1.74L359.81,2.29l.45-1.03Z" />
+      <path class="cls-1"
+        d="m13.78,76.92v-23.91h40.72v-12.68H13.78v-23.2c0-1.79,1.48-3.24,3.3-3.24h43.17V1.2H16.08C7.21,1.2,0,8.3,0,17.04v60.08c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69H17.12c-1.84,0-3.34-1.48-3.34-3.29" />
+      <path class="cls-1"
+        d="m220.36,76.92v-23.91h40.71v-12.68h-40.71v-23.2c0-1.79,1.48-3.24,3.29-3.24h43.18V1.2h-44.16c-8.87,0-16.09,7.1-16.09,15.84v60.08c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69h-43.76c-1.84,0-3.34-1.48-3.34-3.29" />
+      <path class="cls-1"
+        d="m375.81,80.21c-1.84,0-3.34-1.48-3.34-3.29v-23.91h40.72v-12.68h-40.72v-23.2c0-1.79,1.48-3.24,3.3-3.24h43.17V1.2h-44.16c-8.87,0-16.09,7.1-16.09,15.84v60.08c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69h-43.76Z" />
+      <path class="cls-1"
+        d="m82.78,76.92V1.21h-13.78v75.91c0,8.7,7.19,15.78,16.02,15.78h44.86v-12.69h-43.76c-1.84,0-3.34-1.48-3.34-3.29" />
+    </symbol>
+  </svg>
+</body>
+
 </html>
 
 <!-- <img srcset="/assets/images/image.jpg {{ image('/assets/images/image.jpg', { widths: [320, 640, 1280] }).srcset }}" alt="My Image"> -->

@@ -1,3 +1,18 @@
+// _______________________________________________________________ menu _______________________________________________________________
+const menuLinks = document.querySelectorAll("#menu > a");
+const menuItemIds = ["technologia", "gama", "efekty", "opinia", "rutyna"];
+const menuItems = menuItemIds.map(id => document.getElementById(id));
+menuLinks.forEach((linkDiv, index) => {
+  linkDiv.addEventListener("click", () => {
+    menuLinks.forEach(menuLink => menuLink.classList.remove("text-primary"))
+    linkDiv.classList.add("text-primary")
+    menuItems.forEach(element => element.classList.add("lg:hidden"));
+    menuItems[index].classList.remove("lg:hidden");
+  })
+})
+
+
+// _______________________________________________________________ slides _______________________________________________________________
 import { Splide } from '@splidejs/splide';
 
 

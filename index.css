@@ -5,18 +5,24 @@
 @tailwind utilities;
 
 :root {
-  --num1: 5;
-  --num2: 35;
+  --num1: 82;
+  --num2: 98;
+  --num3: 90;
 }
 
 @property --num1 {
   syntax: '<integer>';
-  initial-value: 5;
+  initial-value: 82;
   inherits: false;
 }
 @property --num2 {
   syntax: '<integer>';
-  initial-value: 35;
+  initial-value: 98;
+  inherits: false;
+}
+@property --num3 {
+  syntax: '<integer>';
+  initial-value: 90;
   inherits: false;
 }
 
@@ -45,7 +51,7 @@
 /* ___________________________________________________________ instructions carousel customization ________________________________________________________ */
 
 .arrows {
-  @apply absolute  top-1/3 w-full -translate-y-1/2 sm:top-1/2;
+  @apply absolute  top-1/4 w-full -translate-y-1/2 sm:top-1/2;
 }
 
 .arrow {
@@ -56,14 +62,14 @@
 }
 
 .prev {
-  @apply -left-[10px] sm:-left-[30px] md:-left-[70px];
+  @apply -left-[40px] xs:-left-[50px];
 }
 .prev svg {
   @apply -scale-100;
 }
 
 .next {
-  @apply -right-[10px] sm:-right-[30px] md:-right-[70px];
+  @apply -right-[40px] xs:-right-[50px]
 }
 
 .page {
@@ -77,13 +83,13 @@
 
 /* _____________________________________________________ animations ________________________________________________ */
 
-/* data-animation="num1" data-duration="3s" data-timing="cubic-bezier(0,0,0,1)" for best results*/
+/* data-animation="num1" data-duration="3s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num1)]" for best results*/
 @keyframes num1 {
   from {
     --num1: 0;
   }
   to {
-    --num1: 5;
+    --num1: 82;
   }
 }
 @keyframes num2 {
@@ -91,7 +97,15 @@
     --num2: 0;
   }
   to {
-    --num2: 35;
+    --num2: 98;
+  }
+}
+@keyframes num3 {
+  from {
+    --num3: 0;
+  }
+  to {
+    --num3: 90;
   }
 }
 
