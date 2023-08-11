@@ -66,7 +66,7 @@
     </svg>
 
     <img src="img/11pack.png" alt="packaging"
-      class="w-10/12 mx-auto -mt-[25%] max-w-fit lg:w-[30%] lg:absolute bottom-0 right-[8%]" data-animation="zoomInDown" data-duration="1s">
+      class="w-10/12 mx-auto -mt-[25%] max-w-fit lg:w-[30%] lg:absolute bottom-0 right-[8%] transition-transform duration-500 hover:scale-110" data-animation="zoomInDown" data-duration="1s">
 
     <div class="w-10/12 mx-auto leading-tight text-center lg:text-left lg:absolute bottom-4 left-4 lg:w-1/3 xl:w-2/5" data-animation='fade-from-bottom' >
       <p class="text-[1.2em] xl:text-[1.5em]"><span class="text-primary font-bold ">NASZA PIERWSZA RUTYNA
@@ -82,7 +82,7 @@
                                                                             x
                                                                             xxxxx
 -->
-  <div id="menu" class="w-10/12 mx-auto mt-8 font-bold text-center lg:grid grid-cols-5 gap-1 hidden sticky top-0 z-20">
+  <div id="menu" class="w-10/12 mx-auto mt-8 font-bold text-center lg:grid grid-cols-5 gap-1 hidden sticky top-0 z-20 bg-white">
 
     <a href="#technologia1" class="text-primary hover:text-primary">
       <div class="bg-[#ccccdd] h-full lg:rounded-t-md p-2 min-h-[2lh] grid place-items-center ">
@@ -130,15 +130,15 @@
       <DIV class="text-center flex flex-wrap justify-center">
         <div class="min-w-[250px] max-w-[300px] flex-1">
           <p class="text-[3em] font-bold text-primary">+<span data-animation="num1" data-duration="2s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num1)] [counter-reset:num1_var(--num1)]"></span>%</p>
-          <p>Odbudowa struktury włosów*</p>
+          <p data-animation='fade-in' data-duration='1s' data-delay='2s' >Odbudowa struktury włosów*</p>
         </div>
         <div class="min-w-[250px] max-w-[300px] flex-1">
           <p class="text-[3em] font-bold text-primary">-<span data-animation="num2" data-duration="2s" data-delay="1s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num2)] [counter-reset:num2_var(--num2)]"></span>%</p>
-          <p>Mniej złamań**</p>
+          <p data-animation='fade-in' data-duration='1s' data-delay='3s' >Mniej złamań**</p>
         </div>
         <div class="min-w-[250px] max-w-[300px] flex-1">
           <p class="text-[3em] font-bold text-primary">+<span data-animation="num3" data-duration="2s" data-delay="2s" data-timing="cubic-bezier(0,0,0,1)" class="before:[content:counter(num3)] [counter-reset:num3_var(--num3)]"></span>%</p>
-          <p>Blasku**</p>
+          <p data-animation='fade-in' data-duration='1s' data-delay='4s' >Blasku**</p>
         </div>
       </DIV>
       <p class="text-center mt-4"><small>
@@ -193,7 +193,7 @@
         <p>PRZEŁOMOWA TECHNOLOGIA
           OD L'ORÉAL PARIS,
           wzbogacona w</p>
-        <div
+        <div data-animation='fade-in' data-duration='1s'  
           class='text-[1.4em] text-primary font-bold mx-auto border-[2px] relative border-primary my-4 py-2 w-fit px-4 before:absolute before:h-[2px] before:bg-white before:w-11/12 before:left-1/2 before:-translate-x-1/2 before:-top-[2px] after:absolute after:h-[2px] after:bg-white after:w-11/12 after:left-1/2 after:-translate-x-1/2 after:-bottom-[2px]'>
           KWAS CYTRYNOWY
         </div>
@@ -207,7 +207,9 @@
         <image href="img/50.jpg" width="100%" height="100%" x="0" y="0"></image>
         <text x="250" y="80" font-weight="bold" font-size="16">Uszkodzone wiązanie włosa</text>
         <line x1="350" y1="90" x2="270" y2="120" class="stroke-primary stroke-2"></line>
-        <text x="330" y="180" font-weight="bold" font-size="16">Wzmocnione wiązanie</text>
+        <text x="330" y="180" font-weight="bold" font-size="16" transform-origin="430 190">
+          <animateTransform id="textAni" attributeName="transform" type="scale" values="1;1.1;1"  begin="0s;textAni.end+20s" dur="500ms"></animateTransform>
+          Wzmocnione wiązanie</text>
         <line x1="430" y1="190" x2="430" y2="230" class="stroke-primary stroke-2"></line>
       </svg>
       <svg viewBox='0 0 530 510' preserveAspectRatio='xMinYMin meet' xmlns='http://www.w3.org/2000/svg'
